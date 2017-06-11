@@ -3,8 +3,8 @@
 //var wyslij = document.getElementsByTagName('input')[2];
 var formularz = document.getElementById('formularz')
 
-function pobierzImie(e) {
-    e.preventDefault();
+function pobierzImie(event) {
+    event.preventDefault();
 
     var imie = document.getElementsByName('fname')[0].value;
     var nazwisko = document.getElementsByName('lname')[0].value;
@@ -14,5 +14,4 @@ function pobierzImie(e) {
 
 }
 
-//formularz.onsubmit = alarm;
-//
+//formularz.onsubmit = pobierzImie; - jeżeli w HTML nie byłoby onsubmit=pobierzImie(event), inaczej funkcja wywołuje się sama
