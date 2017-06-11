@@ -11,5 +11,5 @@ var jsonPracownicy = {
 console.log(jsonPracownicy);
 
 jsonPracownicy.pracownicy.forEach(function(el, i){
-            console.log("Imię i nazwisko " + (i+1) + ": " + el.firstName + el.lastName);
+            console.log("Imię i nazwisko " + (i+1) + ": " + el.firstName +" "+ el.lastName);
 }) 
